@@ -1,0 +1,30 @@
+{
+    "quizzList": [
+        {
+            "id": "1",
+            "title": "Quizz 1",
+            "description": "This is the first quizz"
+        },
+        {
+            "id": "2",
+            "title": "Quizz 2",
+            "description": "This is the second quizz"
+        },
+        {
+            "id": "3",
+            "title": "Quizz 3",
+            "description": "This is the third quizz"
+        },
+        {
+            "id": "4",
+            "title": "Quizz 4",
+            "description": "This is the fourth quizz"
+        },
+        {
+            "id": "5",
+            "title": "Quizz 5",
+            "description": "This is the fifth quizz"
+        }
+    ]
+}
+    
