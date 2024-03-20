@@ -26,5 +26,3 @@ model Question {
     quizz       Quizz @relation(fields: [quizzId], references: [id])
     quizzId     String 
 }
-
-http://localhost:3000/quizz/cltz3y8kg0000vjqx9bqpbj8z
