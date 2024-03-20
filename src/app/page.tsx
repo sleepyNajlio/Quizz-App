@@ -1,12 +1,21 @@
 import QuizzCard from "@/components/QuizzCard";
 import Image from "next/image";
 import quizzData from "@/data/quizzData.json";
+import { GetStaticProps } from "next";
+import prisma from "@/lib/prisma";
 
 
-const quizzList = quizzData.quizzList;
 
-export default function Home() {
+async function getQuizzList() {
+  const quizzList = await await prisma.quizz.findMany({
+    where: { published: true },
+  });
+  return quizzList;
+}
 
+export default async function Home() {
+  const quizzList = await getQuizzList();
+  console.log("quizzez" + quizzList);
   return (
     <>
       <main>
